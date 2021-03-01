@@ -1,0 +1,12 @@
+<%- include("header") -%>
+    <div class="box" id="heading">
+      <h1>Welcome To Planner App </h1>
+    </div>
+
+    <div class="box">
+      <form class="item" action="/newRecord" method="post">
+        <input type="text" name="inputName" placeholder="Enter your Name" autocomplete="off">
+        <button type="submit" name="nameButton" > + </button>
+      </form>
+    </div>
+<%- include("footer") -%>
