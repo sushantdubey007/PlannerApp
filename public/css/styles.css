@@ -45,6 +45,13 @@ h1 {
   align-items: center;
   border-bottom: 1px solid #F1F1F1;
 }
+.itemold {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #F1F1F1;
+}
+
 
 .item:last-child {
   border-bottom: 0;
