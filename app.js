@@ -60,9 +60,9 @@ app.post("/newRecord", function(req, res) {
 
 
 app.get("/", function(req, res) {
-if(nameRecord==""){
+/* if(nameRecord==""){
   res.render("home");
-} else {
+} else {*/
   let day = date.getDate();
   Item.find({}, function(err, foundItem) {
     if (foundItem.length === 0) {
@@ -78,7 +78,7 @@ if(nameRecord==""){
       res.render("list", { toDoList: "Today", newListItem: foundItem});
     }
 });
-}
+/* } */
 });
 
 app.get("/:customListName", function(req,res){

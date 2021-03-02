@@ -71,6 +71,14 @@ p {
   padding: 20px;
   font-size: 20px;
   font-weight: 200;
+  color: #000000;
+}
+
+pold {
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 200;
   color: #00204a;
 }
 
