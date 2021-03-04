@@ -12,14 +12,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.set("view engine", "ejs");
 
-/*
 mongoose.connect("mongodb://localhost:27017/todolistDB", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-});
-*/
-
-mongoose.connect("mongodb+srv://admin-sushant:test123@cluster0.lqaus.mongodb.net/todolistDB?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
@@ -60,9 +53,9 @@ app.post("/newRecord", function(req, res) {
 
 
 app.get("/", function(req, res) {
-/* if(nameRecord==""){
+ if(nameRecord==""){
   res.render("home");
-} else {*/
+} else {
   let day = date.getDate();
   Item.find({}, function(err, foundItem) {
     if (foundItem.length === 0) {
@@ -78,7 +71,7 @@ app.get("/", function(req, res) {
       res.render("list", { toDoList: "Today", newListItem: foundItem});
     }
 });
-/* } */
+}
 });
 
 app.get("/:customListName", function(req,res){
